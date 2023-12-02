@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="Public/CSS/bootstrap.css">
+    <link rel="stylesheet" href="Public/CSS/estilo.css">
+    <link rel="stylesheet" href="Public/CSS/contactos.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="estilo-letra">Jota</h2>
+
+        <ul>
+            <li><a class="inicio" href="index.html">Início</a></li>
+            <li><a class="sobre" href="sobre.html">Sobre</a></li>
+            <li><a class="servicos" href="servicos.html">Serviços</a></li>
+            <li><a class="projectos" href="projectos.html">Projectos</a></li>
+            <li><a class="contacto cor" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <footer>
+            <p>&copy 2023 <span class="cor estilo-letra">Jota</span></p>
+            <p>Powered by João Kiaku</p>
+        </footer>
+    </header>
+
+    <!--::::: Botão para modo Escuro / Claro ::::::-->
+    <button type="button" class="btnModo-claro btnModo"></button>
+    
+    <main>
+        <div>
+            <h1><span class="cor estilo-letra">Contacta-</span>me</h1>
+            <h4>Deixe a sua mensagem que eu respondo de imediato!</h4>
+            <form>
+            <div id="formulario">
+                <div>
+                    <input type="text" placeholder="Nome" required autofocus>
+                    <input type="tel" placeholder="Telefone">
+                </div>
+                <input type="email" placeholder="Email">
+                <textarea cols="20" rows="5" placeholder="Mensagem..."></textarea>
+            </div>
+            <div class="content-btn">
+                <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+            </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="Public/JS/jquery-3.7.0.js"></script>
+    <script src="Public/JS/script.js"></script>
+</body>
+
+</html>

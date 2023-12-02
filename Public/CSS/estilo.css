@@ -1,0 +1,301 @@
+@font-face {
+    font-family: letra;
+    src: url(../Fontes/ANANDA\ BLACK\ PERSONAL\ USE.TTF);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+/*::::::::::::: Modo Escuro :::::::::::::*/
+.modo-escuro{
+    background-color: #333;
+    color: #fff;
+    transition: .2s linear;
+}
+
+.modo-escuro-nav{
+    background-color: #777;
+    color: #fff;
+    transition: .2s linear;
+  }
+
+.btnModo-claro{
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../IMG/modo-escuro.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    transition: .2s linear;
+}
+
+.btnModo-escuro{
+    background-image: url(../IMG/modo-claro.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border: none;
+    outline: none;
+    transition: .2s linear;
+  }
+/*:::::::::: Fim do Modo Escuro ::::::::::*/
+
+.estilo-letra{
+    font-family: letra;
+}
+
+.cor{
+    color: red;
+}
+
+header{
+    width: 15%;
+    min-width: 200px;
+    height: 100vh;
+    padding: 60px 60px;
+    background-color: #eee;
+}
+
+header h2{
+    text-align: center;
+    border-right: solid red;
+    border-left: solid red;
+}
+
+header ul{
+    list-style: none;
+    margin-top: 100px;
+    padding: 0;
+}
+
+header ul li{
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.042);
+}
+
+header ul li a{
+    color: #111;
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+
+header ul li a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+header ul li a:active{
+    color: brown;
+}
+
+header ul li .inicio{
+    background-image: url(../IMG/inicio.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+header ul li .sobre{
+    background-image: url(../IMG/sobre.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+header ul li .servicos{
+    background-image: url(../IMG/serviços.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+header ul li .projectos{
+    background-image: url(../IMG/projectos.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+header ul li .contacto{
+    background-image: url(../IMG/telefone.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+footer{
+    margin-top: 250px;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}
+
+.container{
+    width: 85%;
+    min-width: 750px;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: efeito-container 1s ease-in-out;
+}
+
+@keyframes efeito-container {
+    from{
+        opacity: 0;
+        padding-left: 80%;
+    }
+    to{
+        opacity: 1;
+        padding-left: 50px;
+    }
+}
+
+main p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+main a{
+    background-color: red;
+    color: #fff;
+    font-size: 12pt;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+
+main a:hover{
+    text-decoration: none;
+    color: #222;
+}
+
+main .img{
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 100px;
+    border: 5px solid red;
+    border-right: none;
+    border-left: none;
+}
+
+main .container-sobre{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+main .container-sobre img{
+    width: 230px;
+    height: 250px;
+    margin-right: 10px;
+}
+
+main .container-sobre #sobre{
+    width: 100%;
+    margin-left: 20px;
+}
+
+main .container-sobre #sobre p{
+    margin: 10px 0;
+}
+
+main .container-sobre #sobre ul{
+    list-style: none;
+}
+
+main .container-sobre #sobre ul li a{
+    margin: 0;
+    background-color: transparent;
+    color: red;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+main .container-sobre #sobre ul li a:hover{
+    color: #777;
+}
+
+main .container-sobre #sobre ul li .email{
+    background-image: url(../IMG/email.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+main .container-sobre #sobre ul li .facebook{
+    background-image: url(../IMG/facebook.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+main .container-sobre #sobre ul li .whatsapp{
+    background-image: url(../IMG/whatsapp.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+main .container-sobre #sobre ul li .github{
+    background-image: url(../IMG/github.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+main .container-habilidades{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+main .container-habilidades .habilidade{
+    width: 180px;
+    height: 180px;
+    padding: 15px 20px;
+    text-align: center;
+    border: 2px solid #eee;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 100px;
+}
+
+main .container-habilidades .html{
+    border-left: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 3px solid red;
+}
+
+main .container-habilidades .css{
+    border-top: 2px solid red;
+    border-left: 3px solid red;
+}
+
+main .container-habilidades .js{
+    border-top: 3px solid red;
+}
+
+main .container-habilidades .habilidade img{
+    width: 80px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="Public/CSS/bootstrap.css">
+    <link rel="stylesheet" href="Public/CSS/estilo.css">
+    <link rel="stylesheet" href="Public/CSS/projectos.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="estilo-letra">Jota</h2>
+
+        <ul>
+            <li><a class="inicio" href="index.html">Início</a></li>
+            <li><a class="sobre" href="sobre.html">Sobre</a></li>
+            <li><a class="servicos" href="servicos.html">Serviços</a></li>
+            <li><a class="projectos cor" href="projectos.html">Projectos</a></li>
+            <li><a class="contacto" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <footer>
+            <p>&copy 2023 <span class="cor estilo-letra">Jota</span></p>
+            <p>Powered by João Kiaku</p>
+        </footer>
+    </header>
+
+    <!--::::: Botão para modo Escuro / Claro ::::::-->
+    <button type="button" class="btnModo-claro btnModo"></button>
+    
+    <main>
+        <div>
+            <h1 class="cor estilo-letra">Projectos</h1>
+            <h4>Meus principais projectos <span class="cor estilo-letra">feito</span>:</h4>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+                <button class="btn" onclick="filterSelection('website')"> Websites</button>
+                <button class="btn" onclick="filterSelection('apps')"> Aplicações Web</button>
+                <button class="btn" onclick="filterSelection('sistemas')"> Sistemas Web</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column website">
+                    <div class="content">
+                        <img src="Public/IMG/port1.PNG">
+                    </div>
+                </div>
+                <div class="column website">
+                    <div class="content">
+                        <img src="Public/IMG/port2.PNG">
+                    </div>
+                </div>
+                <div class="column website">
+                    <div class="content">
+                        <img src="Public/IMG/port3.PNG">
+                    </div>
+                </div>
+                <div class="column website">
+                    <div class="content">
+                        <img src="Public/IMG/port4.PNG">
+                    </div>
+                </div>
+
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app1.PNG">
+                    </div>
+                </div>
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app2.png">
+                    </div>
+                </div>
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app3.png">
+                    </div>
+                </div>
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app4.PNG">
+                    </div>
+                </div>
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app5.PNG">
+                    </div>
+                </div>
+                <div class="column apps">
+                    <div class="content">
+                        <img src="Public/IMG/app6.PNG">
+                    </div>
+                </div>
+
+                <div class="column sistemas">
+                    <div class="content">
+                        <img src="Public/IMG/sist1.PNG">
+                    </div>
+                </div>
+                <div class="column sistemas">
+                    <div class="content">
+                        <img src="Public/IMG/sist2.PNG">
+                    </div>
+                </div>
+
+                <!-- END GRID -->
+            </div>
+        </div>
+    </main>
+
+    <script src="Public/JS/jquery-3.7.0.js"></script>
+    <script src="Public/JS/script.js"></script>
+    <script src="Public/JS/projectos.js"></script>
+</body>
+
+</html>

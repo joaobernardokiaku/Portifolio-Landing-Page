@@ -1,0 +1,87 @@
+main{
+    width: 85%;
+    min-width: 750px;
+    height: 100vh;
+    padding: 50px;
+    overflow: auto;
+    animation: efeito-container 1s ease-in-out;
+}
+
+form #formulario{
+    margin-top: 30px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+form #formulario div{
+    display: flex;
+    justify-content: space-between;
+}
+
+form #formulario input[type="text"]{
+    background-image: url(../IMG/sobre.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 98% center;
+    border: 2px solid #000;
+    width: 49%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+form #formulario input[type="tel"]{
+    background-image: url(../IMG/telefone.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 98% center;
+    border: 2px solid #000;
+    width: 49%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+form #formulario input[type="email"]{
+    background-image: url(../IMG/email.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 99% center;
+    border: 2px solid #000;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+form #formulario textarea{
+    background-image: url(../IMG/mensagem.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 99% 10px;
+    border: 2px solid #000;
+    width: 100%;
+    height: 280px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+form .content-btn{
+    margin-left: 50px;
+}
+
+form button{
+    background-color: red;
+    color: #fff;
+    font-size: 12pt;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 40px;
+    margin-left: 10px;
+}
+
+form button:hover{
+    color: #000;
+}
+
+form button:active{
+    color: #666;
+}
